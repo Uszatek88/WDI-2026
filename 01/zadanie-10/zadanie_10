@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+    int ocena;
+    int suma = 0;
+    int niedostateczne = 0;
+
+    printf("Podaj 5 ocen (0-6): \n");
+
+    for (int i = 0; i < 5; i++) {
+        if (scanf("%d", &ocena) != 1 || ocena < 0 || ocena > 6) {
+            printf("Niepoprawna ocena! Wprowadz liczbe od 0 do 6.\n");
+            return 1;
+        }
+        suma = suma + ocena;
+        if (ocena == 1) {
+            niedostateczne++;
+        }
+    }
+
+    float srednia = suma / 5.0;
+    printf("Srednia ocen: %.2f\n", srednia);
+    printf("Liczba ocen niedostatecznych: %d\n", niedostateczne);
+
+    return 0;
+}
