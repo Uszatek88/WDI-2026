@@ -3,13 +3,14 @@
 int main (){
     
     int n, liczba;
+    int i;
     int suma = 0;
 
     printf("Podaj liczbe n: ");
     scanf("%d", &n);
       
 
-    for (int i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {
         printf("Podaj liczbe %d: ", i + 1);
         if(scanf("%d", &liczba) != 1){
             printf("Liczba nie jest poprawna!\n");
