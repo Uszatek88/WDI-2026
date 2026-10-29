@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main (){
+    
+    int n, liczba;
+    int suma = 0;
+
+    printf("Podaj liczbe n: ");
+    scanf("%d", &n);
+      
+
+    for (int i = 0; i < n; i++) {
+        printf("Podaj liczbe %d: ", i + 1);
+        if(scanf("%d", &liczba) != 1){
+            printf("Liczba nie jest poprawna!\n");
+            return 1;
+        }
+        suma = suma + liczba;
+    }
+
+    float srednia = (float)suma / n;
+    printf("Suma wprowadzonych liczb: %d\n", suma);
+    printf("Srednia wprowadzonych liczb: %.2f\n", srednia);
+
+    return 0;
+
+
+}
