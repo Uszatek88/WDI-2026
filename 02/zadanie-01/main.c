@@ -83,7 +83,7 @@ int main() {
             break;
 
         default:
-            printf("Niepoprawny wybór w menu!\n");
+            printf("Niepoprawny wybor w menu!\n");
             ilosc = 0; 
             break;
     }
@@ -96,7 +96,7 @@ int main() {
         printf("Suma: %d\n", suma);
         printf("Srednia: %.2f\n", (double)suma / ilosc);
     } else if (wybor >= 1 && wybor <= 3) {
-        printf("Nie podano żadnych liczb.\n");
+        printf("Nie podano zadnych liczb.\n");
     }
 
     return 0;
