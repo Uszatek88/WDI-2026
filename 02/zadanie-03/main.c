@@ -25,7 +25,7 @@ int main(){
             if (liczba2 != 0) {
                 wynik = liczba1 / liczba2;
             } else {
-                printf("Błąd: dzielenie przez zero!\n");
+                printf("Blad: dzielenie przez zero!\n");
                 return 1;
             }
             break;
@@ -33,12 +33,12 @@ int main(){
             if ((int)liczba2 != 0) {
                 wynik = (int)liczba1 % (int)liczba2;
             } else {
-                printf("Błąd: dzielenie przez zero!\n");
+                printf("Blad: dzielenie przez zero!\n");
                 return 1;
             }
             break;
         default:
-            printf("Błąd: nieprawidłowy znak działania!\n");
+            printf("Blad: nieprawidlowy znak dzialania!\n");
             return 1;
     }
 
