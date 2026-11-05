@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main(){
-    double liczba1, liczba2, wynik;
+    int liczba1, liczba2, wynik;
     char znak;
 
     printf("Podaj pierwsza liczbe: ");
-    scanf("%lf", &liczba1);
+    scanf("%d", &liczba1);
     printf("Podaj druga liczbe: ");
-    scanf("%lf", &liczba2);
+    scanf("%d", &liczba2);
     printf("Podaj znak dzialania (+, -, *, /, %%): ");
     scanf(" %c", &znak);
 
@@ -42,6 +42,6 @@ int main(){
             return 1;
     }
 
-    printf("Wynik: %.2lf\n", wynik);
+    printf("Wynik: %.2d\n", wynik);
     return 0;
 }
